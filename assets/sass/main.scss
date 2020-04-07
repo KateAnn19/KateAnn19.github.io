@@ -5,7 +5,10 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import url('fontawesome-all.min.css');
+@import url('fontawesome.scss');
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url("./fontawesome/scss/solid.scss");
+@import url("./fontawesome/scss/brands.scss");
 
 /*
 	Read Only by HTML5 UP
@@ -573,6 +576,8 @@
 
 /* Icon */
 
+
+
 	.icon {
 		@include icon;
 		border-bottom: none;
@@ -887,11 +892,10 @@
 /* Feature Icons */
 
 	ul.feature-icons {
-		list-style: none;
+		
 		padding-left: 0;
 
-		li {
-			@include icon;
+		i{
 			display: inline-block;
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
 			padding: 0.35em 0 0 3.5em;
@@ -900,9 +904,9 @@
 			width: 48%;
 
 			&:before {
-				background: _palette(accent1, bg);
+				// background: _palette(accent1, bg);
 				border-radius: 100%;
-				color: _palette(accent1, fg-bold);
+				color: _palette(accent1, bg);
 				display: block;
 				height: 2.5em;
 				left: 0;
@@ -913,7 +917,40 @@
 				width: 2.5em;
 			}
 		}
+
+		.para{
+			// border: 1px solid black;
+			width: 100%;
+			margin-right: -2em;
+			margin-left: 9em;
+		.free{
+			display: inline-block;
+			vertical-align: top;
+			width: 5%;
+			color: _palette(accent1, bg);
+			position: relative;
+			// border: 1px solid green;
+			margin-right: 6%;				
+		}
 	}
+
+	.non{
+		display: flex;
+		//border: 1px solid pink;
+	}
+	.bottom{
+		display: flex;
+		img{
+			width: 4em;
+			//border: 1px solid grey;	
+			margin-left: -.5em;
+		}
+		p.styled{
+			width: 20%;
+			//border: 1px solid green;					
+		}	
+	}		
+}
 
 /* Icons */
 
@@ -936,7 +973,36 @@
 				}
 			}
 		}
+
+		#pen{
+			font-size: 1em;
+			text-decoration: none;
+			border: none;
+			&:before {
+				font-size: 1.22em;
+			}
+		}
 	}
+
+// certificates	
+
+.cap{
+	width: 50%;
+	font-size: 3em;
+}
+
+.certificate{
+	// border: 1px solid green;
+}
+
+.cred-cont{
+	display: flex;
+	margin: 1%;
+}
+
+.first{
+	margin-right: 8%;
+}
 
 /* Table */
 
