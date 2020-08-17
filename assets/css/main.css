@@ -2756,3 +2756,11 @@ input[type=button],
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/* my own */
+.intellij{
+  width: 2%;
+  margin-right: 3%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
