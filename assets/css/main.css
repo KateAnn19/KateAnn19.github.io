@@ -2781,3 +2781,9 @@ input[type=button],
 .spring{
   margin-left: -24rem;
 }
+
+.instructions{
+  font-size: 1rem;
+  margin-bottom: -3%;
+  padding-left: 6rem;
+}
